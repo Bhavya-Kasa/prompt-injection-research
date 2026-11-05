@@ -34,6 +34,10 @@ The current evaluation dataset contains only 10 test cases. A perfect score on t
 
 Additional testing with paraphrased instructions, indirect prompt injections, and previously unseen attack patterns is necessary to evaluate its ability to generalise.
 
+
+### 4. Context-insensitive detection
+The keyword-based detector flags documents containing suspicious phrases even when those phrases appear in educational or explanatory contexts. It cannot distinguish between an actual prompt injection and a benign discussion about prompt injection, potentially resulting in false positives.
+
 ### Conclusion
 
 This baseline provides an initial benchmark for prompt-injection detection using predefined keywords. Its limitations highlight the need to explore more advanced detection approaches that can identify suspicious intent beyond exact phrase matching.
